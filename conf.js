@@ -14,7 +14,7 @@ exports.config = {
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(5000);
         jasmine.getEnv().addReporter(new HtmlReporter({
-            baseDirectory: 'tmp/screenshots',
+            baseDirectory: 'report',
             screenshotsSubfolder: 'images',
             jsonsSubfolder: 'jsons',
             takeScreenShotsOnlyForFailedSpecs: true,
